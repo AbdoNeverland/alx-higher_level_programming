@@ -7,9 +7,10 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *head = list;
+
 	do {
 		list = list->next;
-	} while( list != NULL && list != head);
+	} while (list != NULL && list != head);
 	if (list == head)
 		return (1);
 	else
