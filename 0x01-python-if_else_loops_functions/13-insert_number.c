@@ -52,5 +52,6 @@ listint_t *insert_node(listint_t **head, int number)
 		h = h->next;
 		i++;
 	} while (1);
+	add_nodeint_end(head, number);
 	return (NULL);
 }
