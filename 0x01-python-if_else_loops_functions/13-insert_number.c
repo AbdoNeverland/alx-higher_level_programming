@@ -1,5 +1,19 @@
 #include "lists.h"
-
+/**
+ *insert_begin - insert at the begining
+ *@head: list
+ *@number: int to add
+ */
+listint_t *insert_begin(listint_t **head, int number)
+{
+	t = malloc(sizeof(listint_t));
+	if (!t)
+		return (NULL);
+	t->n = number;
+	t->next = *head;
+	*head = t;
+	return (t);
+}
 /**
  * insert_node - insert node
  *@head: the list
@@ -13,31 +27,10 @@ listint_t *insert_node(listint_t **head, int number)
 
 	h = *head;
 	if (!h)
-	{
-		/*add to begining*/
-		t = malloc(sizeof(listint_t));
-		if (!t)
-			return (NULL);
-		t->n = number;
-		t->next = NULL;
-		*head = t;
-		return (t);
-
-	}
+		return (insert_begin(head, number));
 	do {
 		if (!prv && h && number <= h->n)
-		{
-			/*add to begining*/
-			t = malloc(sizeof(listint_t));
-			if (!t)
-				return (NULL);
-			t->n = number;
-			t->next = h;
-			if (i == 0)
-				*head = t;
-			return (t);
-
-		}
+			return (inser_begin(head, number));
 		if (prv && h && number >= prv->n && number <= h->n)
 		{
 			t = malloc(sizeof(listint_t));
