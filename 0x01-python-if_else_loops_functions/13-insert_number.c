@@ -6,6 +6,8 @@
  */
 listint_t *insert_begin(listint_t **head, int number)
 {
+	listint_t *t;
+
 	t = malloc(sizeof(listint_t));
 	if (!t)
 		return (NULL);
@@ -30,7 +32,7 @@ listint_t *insert_node(listint_t **head, int number)
 		return (insert_begin(head, number));
 	do {
 		if (!prv && h && number <= h->n)
-			return (inser_begin(head, number));
+			return (insert_begin(head, number));
 		if (prv && h && number >= prv->n && number <= h->n)
 		{
 			t = malloc(sizeof(listint_t));
