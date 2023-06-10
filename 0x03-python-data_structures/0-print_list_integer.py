@@ -9,4 +9,4 @@ def print_list_integer(my_list=[]):
         The return none
     """
     for i in my_list:
-        print(i)
+        print("{:d}".format(i))
