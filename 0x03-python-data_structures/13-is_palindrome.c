@@ -19,7 +19,7 @@ int is_palindrome(listint_t **head)
 		return (0);
 	for (h = *head, i = 0; h && h->next != NULL; h = h->next, i++)
 		v[i] = vv[i]= h->n;
-	v[i] = h->n;
+	v[i] = vv[i] = h->n;
 	for (i = 0; i <= nb / 2; i++)
 	{
 		if (vv[i] != vv[nb  - i])
