@@ -22,7 +22,7 @@ int is_palindrome(listint_t **head)
 	v[i] = h->n;
 	for (i = 0; i <= nb / 2; i++)
 	{
-		if (vv[i] != vv[nb  - i])
+		if (v[i] != v[nb  - i])
 		{
 			free(v);
 			return (0);
