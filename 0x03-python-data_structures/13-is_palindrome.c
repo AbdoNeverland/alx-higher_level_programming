@@ -7,7 +7,7 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int nb = 0, i, *v;
+	int nb = 0, i, *v, vv[1024];
 	listint_t *h = *head;
 
 	for (nb = 0; h &&  h->next != NULL; h = h->next)
@@ -18,11 +18,11 @@ int is_palindrome(listint_t **head)
 	if (!v)
 		return (0);
 	for (h = *head, i = 0; h && h->next != NULL; h = h->next, i++)
-		v[i] = h->n;
+		v[i] = vv[i]= h->n;
 	v[i] = h->n;
 	for (i = 0; i <= nb / 2; i++)
 	{
-		if (v[i] != v[nb  - i])
+		if (vv[i] != vv[nb  - i])
 		{
 			free(v);
 			return (0);
