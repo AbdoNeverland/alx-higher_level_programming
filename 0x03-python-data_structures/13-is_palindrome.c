@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <unistd.h>
 /**
  * reverse_linked_from_index - reverse list by index
  * @head: list
@@ -47,6 +48,7 @@ int is_palindrome(listint_t **head)
 	demi = nb / 2;
 	nb = nb % 2 == 0 ? nb : nb - 1;
 	h = *head;
+	sleep(5);
 	r = reverse_linked_from_index(head, demi);
 	for (i = 0; i < demi; i++)
 	{
