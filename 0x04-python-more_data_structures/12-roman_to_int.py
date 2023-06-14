@@ -14,4 +14,3 @@ def roman_to_int(roman_string):
             sum += nl[i]
         i += 1
     return sum
-print(roman_to_int(None))
