@@ -27,7 +27,7 @@ class Square:
                 self.__size = value
         else:
             raise TypeError("size must be an integer")
-        
+
     def my_print(self):
         for i in range(self.__size):
             for j in range(self.__size):
