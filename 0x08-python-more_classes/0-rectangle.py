@@ -2,3 +2,6 @@
 
 class Rectangle:
     """class reactangle"""
+
+    def __init(self):
+        """init"""
