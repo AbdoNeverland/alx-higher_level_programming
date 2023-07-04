@@ -22,5 +22,6 @@ def copy_list(li):
 #print(new_list == my_list)
 #print(new_list is my_list)
 
-a = ()
-print(type(a))
+a = (1,2)
+b = (1,2)
+print(a is b)
