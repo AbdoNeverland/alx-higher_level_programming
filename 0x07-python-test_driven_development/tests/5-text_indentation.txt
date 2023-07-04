@@ -11,7 +11,6 @@ hello
 >>> __import__("5-text_indentation").text_indentation("hello?")
 hello?
 <BLANKLINE>
-<BLANKLINE>
 
 >>> __import__("5-text_indentation").text_indentation("hello: h")
 hello:
@@ -36,4 +35,6 @@ z
 
 >>> __import__("5-text_indentation").text_indentation("az\n")
 az
-<BLANKLINE>
+
+
+>>> __import__("5-text_indentation").text_indentation("")

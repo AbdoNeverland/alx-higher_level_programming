@@ -24,5 +24,4 @@ def text_indentation(text):
         if ss[i] in chars:
             n += "\n\n"
         i += 1
-
-    print(n)
+    print(n, end="")
