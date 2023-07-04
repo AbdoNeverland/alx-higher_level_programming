@@ -7,3 +7,17 @@
 #assign_value(l1, l2)
 #print(l1)
 
+#!/usr/bin/python3
+def copy_list(li):
+    return li.copy()
+#----------------------------------
+my_list = [1, 2, [4,7]]
+print(my_list)
+
+new_list = copy_list(my_list)
+my_list[2][1]=70000
+print(my_list)
+print(new_list)
+
+print(new_list == my_list)
+print(new_list is my_list)
