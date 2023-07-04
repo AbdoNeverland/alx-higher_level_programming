@@ -1,0 +1,39 @@
+""" testing text_indentation"""
+
+>>> __import__("5-text_indentation").text_indentation(5)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> __import__("5-text_indentation").text_indentation("hello")
+hello
+
+>>> __import__("5-text_indentation").text_indentation("hello?")
+hello?
+<BLANKLINE>
+<BLANKLINE>
+
+>>> __import__("5-text_indentation").text_indentation("hello: h")
+hello:
+<BLANKLINE>
+h
+
+>>> __import__("5-text_indentation").text_indentation("  hello: h ")
+hello:
+<BLANKLINE>
+h
+
+>>> __import__("5-text_indentation").text_indentation("  hel\nlo: h ")
+hel
+lo:
+<BLANKLINE>
+h
+
+>>> __import__("5-text_indentation").text_indentation("a\n\nz")
+a
+<BLANKLINE>
+z
+
+>>> __import__("5-text_indentation").text_indentation("az\n")
+az
+<BLANKLINE>
