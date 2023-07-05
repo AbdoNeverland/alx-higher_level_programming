@@ -10,7 +10,7 @@ def matrix_divided(matrix, div):
     '''a : int or float
     b : int or float
     Return: addition of a and b'''
-    
+
     e1 = "matrix must be a matrix (list of lists) of integers/floats"
     e2 = "Each row of the matrix must have the same size"
     if not isinstance(div, (int, float)):
