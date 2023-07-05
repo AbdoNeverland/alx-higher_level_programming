@@ -24,4 +24,5 @@ class TestMaxInteger(unittest.TestCase):
         """Test"""
         self.assertEqual(max_integer([-5.5,-1,-0.0001]), -0.0001)  
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
