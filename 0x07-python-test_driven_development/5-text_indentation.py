@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""project 0x07 
+"""project 0x07
 contains:
 functions
 tests
