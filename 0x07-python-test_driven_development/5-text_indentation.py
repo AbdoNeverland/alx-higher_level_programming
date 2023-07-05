@@ -15,7 +15,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     chars = "?.:"
     ss = text.strip(" ")
-    n =""
+    n = ""
     i = 0
     while i < len(ss):
         if (ss[i] == " " and n[-1] == "\n"):
