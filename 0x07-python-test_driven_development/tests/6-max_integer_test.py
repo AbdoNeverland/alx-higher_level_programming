@@ -22,7 +22,10 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([0.2,float('NaN'),0.02]), 0.2)
     def test_5(self):
         """Test"""
-        self.assertEqual(max_integer([-5.5,-1,-0.0001]), -0.0001)  
+        self.assertEqual(max_integer([-5.5,-1,-0.0001]), -0.0001)
+    def test_5(self):
+        """Test"""
+        self.assertEqual(max_integer([47]), 47)
 
 if __name__ == "__main__":
     unittest.main()
