@@ -6,25 +6,22 @@ tests
 """
 
 def text_indentation(text):
-    """ print lines after specific characters"""
-
+    '''size : int
+    size of the square
+    print the square'''
+    
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-
-    characters = [".", "?", ":"]
-    splitable = ""
-    for nc in text:
-        if nc in characters:
-            splitable += nc
-            splitable += "😀"
+    chars = "?.:"
+    ss = text.strip(" ")
+    n =""
+    i = 0
+    while i < len(ss):
+        if (ss[i] == " " and n[-1] == "\n"):
+            ""
         else:
-            splitable += nc
-
-    lines = splitable.split("😀")
-    incre = 0
-    for line in lines:
-        line = line.strip()
-        print(line, end="")
-        if incre != len(lines) - 1:
-            print("\n\n", end="")
-        incre += 1
+            n += ss[i]
+        if ss[i] in chars:
+            n += "\n\n"
+        i += 1
+    print(n, end="")
