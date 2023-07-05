@@ -1,0 +1,6 @@
+""" testing lazy_matrix_mul"""
+
+>>> __import__("101-lazy_matrix_mul").lazy_matrix_mul([[3, 4]], [[3, 4]])
+Traceback (most recent call last):
+...
+ValueError: shapes (1,2) and (1,2) not aligned: 2 (dim 1) != 1 (dim 0)
