@@ -5,11 +5,12 @@ functions
 tests
 """
 
+
 def text_indentation(text):
     '''size : int
     size of the square
     print the square'''
-    
+
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     chars = "?.:"
