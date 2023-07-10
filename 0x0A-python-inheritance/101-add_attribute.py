@@ -3,6 +3,7 @@
 
 
 def add_attribute(cl, nm, vl):
+    """add """
     try:
         setattr(cl, nm, vl)
     except Exception as e:
