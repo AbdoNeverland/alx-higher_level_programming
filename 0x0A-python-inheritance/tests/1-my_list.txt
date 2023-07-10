@@ -7,4 +7,7 @@
 [-7, -1, 0, 4, 9]
 
 >>> __import__('1-my_list').MyList().print_sorted()
+[]
 
+>>> __import__('1-my_list').MyList()
+[]
