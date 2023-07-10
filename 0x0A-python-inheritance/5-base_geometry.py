@@ -3,5 +3,5 @@
 
 
 class BaseGeometry:
-    """ """
+    """ base geo"""
     pass
