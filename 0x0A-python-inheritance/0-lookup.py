@@ -1,3 +1,7 @@
 #!/usr/bin/python3
+"""module"""
+
+
 def lookup(obj):
-    return [m for m in dir(obj)]
+    """return a and m"""
+    return dir(obj)
