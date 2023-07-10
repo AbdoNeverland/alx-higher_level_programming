@@ -4,7 +4,6 @@
 
 def add_attribute(cl, nm, vl):
     """add """
-    try:
-        setattr(cl, nm, vl)
-    except Exception as e:
+    if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
+    setattr(cl, nm, vl)
