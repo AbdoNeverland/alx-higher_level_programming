@@ -36,4 +36,9 @@ TypeError: integer_validator() takes 3 positional arguments but 4 were given
 >>> b.integer_validator("n")
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() takes 3 positional arguments but 4 were given
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> b.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
