@@ -32,3 +32,8 @@ TypeError: area() takes 1 positional argument but 2 were given
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+>>> b.integer_validator("n")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
