@@ -1,0 +1,7 @@
+#test 
+
+>>> __import__('1-my_list').MyList([4,9,1,0,7]).print_sorted()
+[0, 1, 4, 7, 9]
+
+>>> __import__('1-my_list').MyList([4,9,-1,0,-7]).print_sorted()
+[-7, -1, 0, 4, 9]
