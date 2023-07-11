@@ -23,7 +23,7 @@ class Student:
             return d
         return self.__dict__
 
-    def reload_from_json(self, json): 
+    def reload_from_json(self, json):
         """ fonction"""
         for i, j in json.items():
             setattr(self, i, j)
